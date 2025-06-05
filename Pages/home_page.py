@@ -1,5 +1,5 @@
 from selenium.webdriver.common.by import By
-from pages.base_page import BasePage
+from Pages.base_page import BasePage
 
 class HomePage(BasePage):
     def __init__(self, driver):
@@ -37,7 +37,7 @@ class HomePage(BasePage):
             return 0
 
     def click_checkout(self):
-        # Click the checkout button
+        # Click the checkout Button
         checkout_btn = self.driver.find_element(By.CLASS_NAME, "buy-btn")
         checkout_btn.click()
 
